@@ -34,7 +34,7 @@ we also provide the following means to smoothly download and process them.
 Annotations are provided in the gluoncv motion dataset format:
 https://github.com/dmlc/gluon-cv/tree/master/gluoncv/torch/data/gluoncv_motion_dataset
 
-Annotations are provided with visible and amodal bounding boxes in anno_visible_v3.1.json and anno_amodal_v3.1.json
+Annotations are provided with visible and amodal bounding boxes in anno_visible.json and anno_amodal.json
 respectively.
 
 ## Version

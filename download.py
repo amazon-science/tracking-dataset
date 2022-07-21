@@ -13,7 +13,7 @@ if __name__ == "__main__":
     script_dir = Path(__file__).parent
     dataset_dir = script_dir / "dataset"
 
-    subprocess.run([sys.executable, "-m", "awscli", "s3", "sync", S3_URL, dataset_dir])
+    subprocess.run([sys.executable, "-m", "awscli", "s3", "sync", "--no-sign-request", S3_URL, dataset_dir])
 
     anno_zips = ["anno_amodal.zip", "anno_visible.zip"]
     anno_zips = [Path("annotation", v) for v in anno_zips]
