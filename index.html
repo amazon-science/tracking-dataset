@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="webthemez">
+<title>PersonPath22</title>
+
+<!-- Bootstrap core CSS -->
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="assets/css/styles.css" rel="stylesheet">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+<link href="assets/css/animate-custom.css" rel="stylesheet"> 
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --> 
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div id="navbar-main"> 
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+	   <div class="pull-left logo">
+        <a class="" href="#home"><img src="assets/img/person_path_22.png" /></a>
+       </div>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav pull-right">
+          <li> <a href="#description" style="color:#eb8532">Dataset Description</a></li>
+<!--					<li> <a href="#explore" style="color:#eb8532">Explore</a></li>-->
+          <li> <a href="#download" style="color:#eb8532">Download</a></li>
+          <li> <a href="#attribution" style="color:#eb8532"> Attribution</a></li>
+          <li> <a href="#license" style="color:#eb8532"> License</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!-- ==== HEADERWRAP ==== -->
+<div id="home">
+<div id="headerwrap" name="description">
+  <header class="clearfix tb"> 
+ <div class="tb-cell text-center">
+    <h1 style="padding-top:300px;color:white;">PersonPath22</h1>
+    <p>Large scale Real-world Multi Person Tracking Dataset</p>
+	</div>
+	</header>
+</div>
+</div>
+<hr>
+<!-- /headerwrap --> 
+
+<!-- ==== Dataset Description ==== -->
+<div id="description" name="description">
+    <div class="container">
+      <div class="row">
+        <h2>Dataset Description</h2>
+				<br>
+<!--				<p class="large" style="color:red">TODO: ADD SOME GIFS, UPDATE IMAGES AND POSSIBLY TEXT.</p>-->
+				<p class="large"> <b>  PersonPath22 </b> is multi-person tracking dataset that is over an order of
+					magnitude larger than the most popular tracking datasets <a href="https://motchallenge.net/data/MOT17/">MOT17</a> and <a href="https://motchallenge.net/data/MOT20/">MOT20</a>, while maintaining the high
+					quality bar of annotation present in those datasets. <br><br>
+
+					<i> Video source composition: </i> Videos are collected from sources where we are given the rights to redistribute the content and participants have given explicit consent.
+					Our dataset consists of <b>236 videos</b> captured mostly from static-mounted cameras. 
+					Approximately 80% of these videos are carefully sourced from scratch from stock footage websites and 20% are collected from
+					existing datasets.
+				</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<a>
+						<img src="assets/img/description/video_sources.png" class="img-responsive">
+					</a>
+				</div>
+<!--				<div class="col-lg-8">-->
+<!--					<a>-->
+<!--						<img src="assets/img/description/key_frames.png" class="img-responsive">-->
+<!--					</a>-->
+<!--				</div>-->
+    	</div>
+			<br><br>
+			<p class = "large">
+				<i>Video diversity: </i> Videos in the dataset has large diversity in terms 1), camera angles (from birds-eye view to low-angle
+				view); 2) scenery/ weather conditions (sunny, raining, cloudy, night); 3), lighting conditions as well as 4), crowd densities.
+			</p>
+			<div class="row">
+<!--				<div class="col-lg-8">-->
+<!--					<a>-->
+<!--						<img src="assets/img/description/key_frames.png" class="img-responsive">-->
+<!--					</a>-->
+<!--				</div>-->
+				<div class="col-lg-9">
+					<a>
+						<img src="assets/img/description/video_attributes_concat.png" class="img-responsive">
+					</a>
+				</div>
+			</div>
+			<br><br>
+			<p class="large">
+				<i>Person-level meta data: </i> Videos in PersonPath22 dataset are exhaustively annotated with both amodal and visible bounding boxes
+				as well as their unique identifiers. In addition, each person is further labeled with the following tags:
+				<ul style="list-style-type:circle">
+					<li>Sitting / Standing still person</li>
+					<li>Person in vehicle</li>
+					<li>Person on open vehicle</li>
+					<li>Reflection</li>
+					<li>Severely occluded person</li>
+					<li>Person in background</li>
+					<li>Foreground/Normal person.</li>
+				</ul>
+			</p>
+			<div class="row">
+				<div class="col-lg-9">
+					<a>
+						<img src="assets/img/description/visualization_tag.png" class="img-responsive">
+					</a>
+				</div>
+			</div>
+  </div>
+	<hr>
+</div>
+
+<!-- ==== Explore ==== -->
+<!--<div id="explore" name="explore">-->
+<!--	<div class="container">-->
+<!--    <div class="row">-->
+<!--      <h2>Explore</h2>-->
+<!--			<br>-->
+<!--			<h3>Different Camera Angles</h3>-->
+<!--			<br>-->
+<!--			<div class="col-lg-3">-->
+<!--					<video controls muted>-->
+<!--						<source src="assets/vids/camera_angle/birds_eye.mp4" type="video/mp4">-->
+<!--						Sorry, your browser doesn't support embedded videos.-->
+<!--					</video>-->
+<!--				<p class="centered">Bird's Eye View</p>-->
+<!--			</div>-->
+<!--			<div class="col-lg-3">-->
+<!--				<video controls muted>-->
+<!--					<source src="assets/vids/camera_angle/high.mp4" type="video/mp4">-->
+<!--					Sorry, your browser doesn't support embedded videos.-->
+<!--				</video>-->
+<!--				<p class="centered">High-Angle View</p>-->
+<!--			</div>-->
+<!--			<div class="col-lg-3">-->
+<!--				<video controls muted>-->
+<!--					<source src="assets/vids/camera_angle/low.mp4" type="video/mp4">-->
+<!--					Sorry, your browser doesn't support embedded videos.-->
+<!--				</video>-->
+<!--			<p class="centered">Low-Angle View</p>-->
+<!--		</div>-->
+<!--		<div class="col-lg-3">-->
+<!--			<video controls muted>-->
+<!--				<source src="assets/vids/camera_angle/medium.mp4" type="video/mp4">-->
+<!--				Sorry, your browser doesn't support embedded videos.-->
+<!--			</video>-->
+<!--			<p class="centered">Mid-Angle View</p>-->
+<!--		</div>-->
+
+<!--		<h3>Different Locations and Crowd Densities</h3>-->
+<!--			<br>-->
+<!--			<div class="col-lg-3">-->
+<!--					<video controls muted>-->
+<!--						<source src="assets/vids/indoor_outdoor/indoor_high_density.mp4" type="video/mp4">-->
+<!--						Sorry, your browser doesn't support embedded videos.-->
+<!--					</video>-->
+<!--				<p class="centered">Indoor - High Density</p>-->
+<!--			</div>-->
+<!--			<div class="col-lg-3">-->
+<!--				<video controls muted>-->
+<!--					<source src="assets/vids/indoor_outdoor/indoor_low_density.mp4" type="video/mp4">-->
+<!--					Sorry, your browser doesn't support embedded videos.-->
+<!--				</video>-->
+<!--				<p class="centered">Indoor - Low Density</p>-->
+<!--			</div>-->
+<!--			<div class="col-lg-3">-->
+<!--				<video controls muted>-->
+<!--					<source src="assets/vids/indoor_outdoor/outdoor_high_density.mp4" type="video/mp4">-->
+<!--					Sorry, your browser doesn't support embedded videos.-->
+<!--				</video>-->
+<!--			<p class="centered">Outdoor - High Density</p>-->
+<!--		</div>-->
+<!--		<div class="col-lg-3">-->
+<!--			<video controls muted>-->
+<!--				<source src="assets/vids/indoor_outdoor/outdoor_low_density.mp4" type="video/mp4">-->
+<!--				Sorry, your browser doesn't support embedded videos.-->
+<!--			</video>-->
+<!--			<p class="centered">Outdoor - Low Density</p>-->
+<!--		</div>-->
+
+<!--		<h3>Different Weather Conditions</h3>-->
+<!--			<br>-->
+<!--			<div class="col-lg-3">-->
+<!--					<video controls muted>-->
+<!--						<source src="assets/vids/weather/cloudy.mp4" type="video/mp4">-->
+<!--						Sorry, your browser doesn't support embedded videos.-->
+<!--					</video>-->
+<!--				<p class="centered">Cloudy</p>-->
+<!--			</div>-->
+<!--			<div class="col-lg-3">-->
+<!--				<video controls muted>-->
+<!--					<source src="assets/vids/weather/snow.mp4" type="video/mp4">-->
+<!--					Sorry, your browser doesn't support embedded videos.-->
+<!--				</video>-->
+<!--				<p class="centered">Snow</p>-->
+<!--			</div>-->
+<!--			<div class="col-lg-3">-->
+<!--				<video controls muted>-->
+<!--					<source src="assets/vids/weather/sunny.mp4" type="video/mp4">-->
+<!--					Sorry, your browser doesn't support embedded videos.-->
+<!--				</video>-->
+<!--			<p class="centered">Sunny</p>-->
+<!--		</div>-->
+<!--		<div class="col-lg-3">-->
+<!--			<video controls muted>-->
+<!--				<source src="assets/vids/weather/wet_night.mp4" type="video/mp4">-->
+<!--				Sorry, your browser doesn't support embedded videos.-->
+<!--			</video>-->
+<!--			<p class="centered">Wet (night)</p>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</div>-->
+
+<!-- ==== Download ==== -->
+<div id="download" name="download">
+	<div class="container">
+    <div class="row">
+      <h2>Download</h2>
+			<br>
+      <h4>Data</h4>
+<!--			<p class="large" style="color:red">TODO: UPDATE TEXT, LICENSE AND ADD LINKS.</p>-->
+			<p class="large">We provide scripts to automatically download all the source videos and their corresponding tracking annotations, which include amodal and visible bounding boxes for each person.
+				In addition, each person is annotated with a unique person identifier throughout each video, and we assume that the same person does not appear in different videos.
+				The scripts are included in our official <a href="https://github.com/amazon-research/tracking-dataset"> GitHub</a> repo.</p>
+      <h4>Evaluation Code</h4>
+<!--			<p class="large" style="color:red">TODO: UPDATE TEXT, LICENSE AND ADD LINKS.</p>-->
+			<p class="large">To setup a consistent protocol for all researchers, we provide the evaluation scripts that are adapted based on the open-sourced <a href="https://github.com/JonathonLuiten/TrackEval">TrackEval</a>
+				in our official <a href="https://github.com/amazon-research/tracking-dataset"> GitHub</a> repo.
+<!--			<h4>License</h4>-->
+		<h4> Public detection </h4>
+		    <p class="large"> In cases that the researchers would like to compare their data association model alone,
+				we provide standard public detection results (from Faster-RCNN) for all videos so that their comparison is consistent.
+
+      <h4>Paper</h4>
+			<br>
+<!--			<p class="large" style="color:red">TODO: ADD UPDATED ABSTRACT, FIRST PAGE, UPDATED LINK TO PAPER AND SUPPLEMENTARY.</p>-->
+			<div class="col-lg-4">
+				<a href="assets/pdfs/eccv2022_dataset.pdf">
+					<img src="assets/img/downloads/paper_first_page.png" width=330 height=500 class="pull-left"/>
+				</a>
+			</div>
+			<div class="col-lg-6">
+				<h4>Abstract</h4>
+				<p>
+					This paper presents a new large scale multi-person tracking dataset.
+					Our dataset is over an order of magnitude larger than currently available
+					high quality multi-object tracking datasets such as MOT17, HiEve, and MOT20 datasets.
+					The lack of large scale training and test data for this task has limited the community's
+					ability to understand the performance of their tracking systems on a wide range of
+					scenarios and conditions such as variations in person density, actions being performed,
+					weather, and time of day. Our dataset was specifically sourced to provide a wide variety
+					of these conditions and our annotations include rich meta-data such that the performance
+					of a tracker can be evaluated along these different dimensions. The lack of training data
+					has also limited the ability to perform end-to-end training of tracking systems.
+					As such, the highest performing tracking systems all rely on strong detectors trained on
+					external image datasets. We hope that the release of this dataset will enable new lines of
+					research that take advantage of large scale video based training data.
+				</p>
+			</div>
+		</div>
+	</div>
+	<hr>
+</div>
+
+<!-- ==== Annotations ==== -->
+<!--<div id="annotation" name="Annotations">-->
+<!--  <div class="container">-->
+<!--    <div class="row">-->
+<!--      <h2>Annotations</h2>-->
+<!--			<p class="large" style="color:red">-->
+<!--				TODO: show an example of an annotation file.-->
+<!--			</p>-->
+<!--			<br>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--	<hr>-->
+<!--</div>-->
+<!-- container -->
+
+
+<!-- ==== Attributes ==== -->
+<div id="attribution" name="attribution">
+    <div class="container">
+      <div class="row">
+        <h2>Attribution</h2>
+				<br><br>
+				<p class="large">
+					If you use this dataset for publication, we kindly ask you to attribute credit by citing our ECCV 2022 paper, providing detailed description of the dataset and benchmarks:
+				</p>
+				<div style="background-color:#d1cece; text-align:left; vertical-align: middle; padding:20px 47px;">
+					@inproceedings{personpath22,<br>
+						&ensp; title={Large scale Real-world Multi Person Tracking},<br>
+						&ensp; author={Shuai, Bing and Bergamo, Alessandro and Buechler, Uta and Berneshawi, Andrew and Boden, Alyssa and Tighe, Joe},<br>
+						&ensp; booktitle={European Conference on Computer Vision}, <br>
+						&ensp; year={2022}, <br>
+                        &ensp; organization={Springer} <br>
+					}
+				</div>
+<!--				<p class="large" style="color:red">TODO: ADD CORRECT BIBTEX</p>-->
+				<br><br><br>
+
+				<p class="large">Credit for the annotations must be given to:</p>
+				<div class="centered">
+					<a>
+						<img src="assets/img/aws_logo.png" width=120 >
+					</a>
+<!--					<br>-->
+<!--					Amazon Web Services (AWS)-->
+				</div>
+				<br><br><br>
+
+				<p class="large">Credit for building the dataset must be given to </p>
+				<div class="col-lg-2">
+					<p class="centered">
+						<img src="assets/img/attribution/bshuai.jpg" height=120>
+					</p>
+					<p class="centered"> Bing Shuai</p>
+				</div>
+				<div class="col-lg-2">
+					<p class="centered">
+						<img src="assets/img/attribution/bergamo.jpg" height=120 >
+					</p>
+					<p class="left">&nbsp Alessandro Bergamo</p>
+				</div>
+				<div class="col-lg-2">
+					<p class="centered">
+						<img src="assets/img/attribution/Uta.jpg" height=120 >
+					</p>
+					<p class="centered">Uta Buechler</p>
+				</div>
+				<div class="col-lg-2">
+					<p class="centered">
+						<img src="assets/img/attribution/bernea.jpg" height=120/>
+					</p>
+					<p class="centered">Andrew Berneshawi</p>
+				</div>
+				<div class="col-lg-2">
+					<p class="centered">
+						<img src="assets/img/attribution/alyboden.jpg" height=120/>
+					</p>
+					<p class="centered">Alyssa Boden</p>
+				</div>
+				<div class="col-lg-2">
+					<p class="centered">
+						<img src="assets/img/attribution/tighej.jpg" height=120/>
+					</p>
+					<p class="centered">Joseph Tighe</p>
+				</div>
+<!--				<p class="large" style="color:red">TODO: ADD ALL IMAGES</p>-->
+    	</div>
+		</div>
+		<hr>
+  </div>
+
+<!-- ==== Acknowledgement ==== -->
+<div id="license" name="license">
+  <div class="container">
+    <div class="row">
+      <h2>License</h2>
+			<br>
+<!--			<p class="large" style="color:red">-->
+<!--				TODO: SOME ACKNOWLEDGEMENT TO ANNOTATORS/DATA TEAM? SPECIFIC NAMES?-->
+<!--			</p>-->
+<!--			<br>-->
+<!--			<p class="large" style="color:red">-->
+<!--				TODO: ACKNOWLEDGEMENT TO BERNT SCHIELE?-->
+<!--			</p>-->
+<!--			<p class="large">-->
+<!--				This webpage is based on a template designed by <a href="http://www.webthemez.com">Webthemez.</a>-->
+<!--			</p>-->
+		       <p>
+				   This dataset  is distributed under <em>Creative Commons Attribution-NonCommercial 4.0 International Public License (CC BY-NC 4.0) </em>. <b>We ask the users
+				   of this dataset to use the data in a socially responsible manner, and request to  not use the data to identify or generate biometric information of the people in  the videos. </b>
+
+			   </p>
+			<br>
+    </div>
+  </div>
+	<hr>
+</div>
+<!-- container -->
+
+<div id="footerwrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8"> <span class="copyright">&copy; Amazon.com 2022.</span> </div>
+      <div class="col-md-4">
+        <!-- <ul class="list-inline social-buttons">
+          <li><a href="#"><i class="fa fa-twitter"></i></a> </li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a> </li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a> </li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a> </li>
+        </ul> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script> 
+<script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
+<script type="text/javascript" src="assets/js/custom-scripts.js"></script>
+</body>
+</html>
