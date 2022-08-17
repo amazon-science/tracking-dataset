@@ -235,13 +235,13 @@ a:before, a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,.5)), url(../img/stacked_videos_2x6.jpg) no-repeat center top;
-	/* margin-top: -50px; */
+	background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0,0,0,.35)), url(../img/person_path_22.gif) no-repeat center top;
+	 margin-top: 75px;
 	/* padding-top: 120px; */
 	text-align: center;
 	/* background-attachment: relative; */
 	background-position: center center;
-	min-height: 700px;
+	min-height: 500px;
 	width: 100%;
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
