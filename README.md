@@ -19,6 +19,8 @@ following ECCV 2022 paper.
 
 
 ![alt text](readme/person_path_22.gif)
+**We ask all researchers to re-download the videos / annotations, if your data copy was downloaded before 10/21/2022 (MM/DD/YYYY).**
+
 
 ## Leaderboard
 We encourage all researchers report their evaluation results on the [leaderboard](https://paperswithcode.com/sota/multi-object-tracking-on-personpath22) 
@@ -48,11 +50,8 @@ respectively.
 
 ## Version
 [Updated 10/21/2022] Bugs were fixed related to Pixabay and MEVA videos in the early downloading script. 
-<span style="color: orange"> *We ask all researchers to re-download the videos / annotations 
-if your data copy was downloaded before 10/21/2022 (MM/DD/YYYY).*
- </span> 
 
-[TO Appear] Official script to convert gluoncv motion dataset format to MOTChallenge and MSCOCO dataset format.
+[To Appear] Official script to convert gluoncv motion dataset format to MOTChallenge and MSCOCO dataset format.
 
 [To Appear] Official pre-trained detection results for "public detection" evaluation protocol. 
 
