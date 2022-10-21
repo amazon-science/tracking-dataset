@@ -1,4 +1,4 @@
-![alt text](readme/person_path_22.png)
+![alt text](readme/personpath22.png)
 
 # Large scale Real-world Multi-Person Tracking
 
@@ -18,7 +18,7 @@ following ECCV 2022 paper.
     }
 
 
-![alt text](readme/person_path_22.gif)
+![alt text](readme/personpath22_small.gif)
 **We ask all researchers to re-download the videos / annotations, if your data copy was downloaded before 10/21/2022 (MM/DD/YYYY).**
 
 [PersonPath22 Homepage](https://amazon-research.github.io/tracking-dataset/personpath22.html)
