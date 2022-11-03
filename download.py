@@ -265,8 +265,6 @@ def get_meva_vids(meva_mapping, videos_root):
             if not mp4_out_path.exists():
                 print(f"Converting {download_out_path.name} to mp4")
                 # Convert to mp4 first or there are some weird time issues (e.g. only 2:59 instead of 3:00)
-                # Tried just copying streams to mp4 first but it does still cause an off by one frame issue, but by
-                # adjusting the end padding to 40 ms it works as expected
                 convert_vid_ffmpeg(download_out_path, mp4_out_path, copy=True)
                 # convert_vid_ffmpeg(download_out_path, mp4_out_path, crf=17)
 
@@ -274,8 +272,7 @@ def get_meva_vids(meva_mapping, videos_root):
             if not crop_out_path.exists():
                 print(f"Cropping {mp4_out_path.name} to {crop_out_path.name}")
                 # Original dataset meva videos were cropped with 15 fps
-                # Pad end time with 40ms since otherwise a frame is missing in some videos for some reason
-                crop_vid_ffmpeg(mp4_out_path, crop_out_path, ts_ms_start, ts_ms_end, fps=15, end_pad_ms=40)
+                crop_vid_ffmpeg(mp4_out_path, crop_out_path, ts_ms_start, ts_ms_end, fps=15, end_pad_ms=0)
             copy_to_target(crop_out_path, final_vid_path)
         except Exception as e:
             print(f"Failed to process meva video: {meva_id}, for uid: {uid}, exception: {e}", file=sys.stderr)
