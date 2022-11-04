@@ -21,7 +21,7 @@ following ECCV 2022 paper.
 ![alt text](readme/personpath22_small.gif)
 **We ask all researchers to re-download the videos / annotations, if your data copy was downloaded before 10/21/2022 (MM/DD/YYYY).**
 
-[PersonPath22 Homepage](https://amazon-research.github.io/tracking-dataset/personpath22.html)
+[PersonPath22 Homepage](https://amazon-science.github.io/tracking-dataset/personpath22.html))
 
 
 ## Leaderboard
