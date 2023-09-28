@@ -53,13 +53,15 @@ https://github.com/dmlc/gluon-cv/tree/master/gluoncv/torch/data/gluoncv_motion_d
 Annotations are provided with visible and amodal bounding boxes in anno_visible_2022.json and anno_amodal_2022.json
 respectively.
 
+## Public Detection
+Please refer to [Public detection](readme/public_detection.md) for details
 
 ## Version
 [Updated 10/21/2022] Bugs were fixed related to Pixabay and MEVA videos in the early downloading script. 
 
-[To Appear] Official script to convert gluoncv motion dataset format to MOTChallenge and MSCOCO dataset format.
+[Updated 09/28/2023] Official pre-trained detection results for "public detection" evaluation protocol.
 
-[To Appear] Official pre-trained detection results for "public detection" evaluation protocol. 
+[To Appear] Official script to convert gluoncv motion dataset format to MOTChallenge and MSCOCO dataset format.
 
 [To Appear] The full FPS annotation. (The existing annotation only includes key frames which are sampled at 5FPS.)  
 
