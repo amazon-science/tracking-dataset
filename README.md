@@ -28,6 +28,7 @@ following ECCV 2022 paper.
 We encourage all researchers report their evaluation results on the [leaderboard](https://paperswithcode.com/sota/multi-object-tracking-on-personpath22) 
 on paperswithcode.com.
 
+Please refer to [Results](readme/results.md) to find the raw predictions for models that are used in the paper.
 
 ## Requirements
 The code should be run with python 3. We use the aws cli to help download the data, please first run
